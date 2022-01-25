@@ -5,7 +5,7 @@ function compute()
     years = parseInt(document.getElementById("year").value);
     result = document.getElementById("result");
     date = new Date().getFullYear()+years;
-    calculate = principal +(rate*years); console.log(calculate, years, date)
+    calculate = calculateInterest(principal, years, rate);
 
     text = "If you deposit <span class='yellow'>"+ principal+"</span>,<br>";
     text += "ata an interest rate of <span class='yellow'>"+ rate+"</span>,<br>";
@@ -15,8 +15,13 @@ function compute()
     
 }
 
-function changeRate() { console.log("hola")
+function changeRate() {
     rate = document.getElementById("rate").value;
     percent = document.getElementById("percent");
     percent.innerHTML = rate + " %";
+}
+
+function calculateInterest(total,year,rate) {
+    var interest = rate*year/100+1;
+    return Math.round((total*interest)-total);
 }
