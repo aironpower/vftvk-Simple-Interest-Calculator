@@ -18,25 +18,22 @@ h1 {
 }
 .row {
 	display: flex;
-  width: fit-content;
-  margin-left: 50px;
-  margin-bottom: 10px;
-  justify-content: left;
+    width: fit-content;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    justify-content: left;
 }
 .row span {
 	min-width: 140px;
-  text-align: left;
+    text-align: left;
 }
 #year {
 	width:  50px;
 }
 #result {
 	text-align: left;
-  padding-left: 50px;
-  font-weight: normal;
-}
-.yellow {
-	background: yellow;
+    padding-left: 50px;
+    font-weight: normal;
 }
 .last {
 	float: left;
